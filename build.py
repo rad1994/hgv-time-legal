@@ -30,7 +30,7 @@ TEMPLATE = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{title} — HGV Time Directive</title>
+<title>{title} — HGV Time</title>
 <style>
   :root {{
     --bg: #ffffff; --surface: #f5f6f8; --text: #14181f; --muted: #5a6675;
@@ -82,7 +82,7 @@ TEMPLATE = """<!doctype html>
   <a href="./terms.html"{terms_current}>Terms of Service</a>
 </nav>
 {body}
-<footer>HGV Time Directive — a driving hours and working time assistant for professional drivers.</footer>
+<footer>HGV Time — a driving hours and working time assistant for professional drivers.</footer>
 </div>
 </body>
 </html>

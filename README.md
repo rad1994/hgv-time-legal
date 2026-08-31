@@ -1,6 +1,6 @@
-# HGV Time Directive — legal documents
+# HGV Time — legal documents
 
-Public privacy policy and terms of service for the HGV Time Directive Android app.
+Public privacy policy and terms of service for the HGV Time Android app.
 
 Published with GitHub Pages: <https://rad1994.github.io/hgv-time-legal/>
 
