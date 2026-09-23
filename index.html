@@ -55,9 +55,9 @@
   <a href="./terms.html">Terms of Service</a>
 </nav>
 <h1>Privacy Policy</h1>
-<p class="updated"><strong>Last updated: 29 August 2026</strong></p>
+<p class="updated"><strong>Last updated: 23 September 2026</strong></p>
 <h3>The short version</h3>
-<p>HGV Time does not collect your data. The app has no user accounts, no analytics, no advertising, and makes no network requests. Everything you enter stays in the app&#x27;s storage on your own device.</p>
+<p>HGV Time does not collect your data. The app has no user accounts, no analytics and no advertising. Everything you enter stays in the app&#x27;s storage on your own device. The app is offline-first: every feature works without an internet connection. The only time it goes online is to check for app updates, and that check never includes your records — see <strong>App updates</strong> below.</p>
 <h3>What information the app stores on your device</h3>
 <p>The app stores the following <strong>locally on your device only</strong>, in a database that belongs to the app:</p>
 <ul>
@@ -70,11 +70,37 @@
 <h3>What the app does not do</h3>
 <ul>
 <li>It does not create an account or ask for your name, email address, phone number, or any identifier.</li>
-<li>It does not use analytics, crash reporting, advertising, or tracking of any kind.</li>
-<li>It does not contain third-party software development kits that collect data.</li>
-<li>It does not request access to your location, contacts, camera, microphone, photos, or files.</li>
-<li>It does not make network requests. The app works entirely offline.</li>
+<li>It does not use analytics, crash-reporting services, advertising, or tracking of any kind.</li>
+<li>It does not contain third-party software development kits that collect data, apart from Expo&#x27;s update service described under <strong>App updates</strong>.</li>
+<li>It does not request access to your contacts, camera, microphone, photos, or files.</li>
+<li>It does not request access to your location unless you switch on <strong>Watch for movement during breaks</strong> yourself. That feature is off by default and described in its own section below.</li>
+<li>It does not need an internet connection. Every feature works offline; the only network connection the app makes is the update check described below.</li>
 </ul>
+<h3>App updates</h3>
+<p>The app uses Expo&#x27;s update service (expo-updates) so that fixes can reach you without a full reinstall from Google Play. To do this, the app may connect to Expo&#x27;s update server (u.expo.dev) when it starts, and when you tap the button to check for updates in Settings.</p>
+<p>Each update check sends only what the server needs to decide which update fits your installation:</p>
+<ul>
+<li>a random installation identifier created by the update service. It is not linked to your name, your Google account, or your phone number;</li>
+<li>technical details: that the device runs Android, the app&#x27;s version, and which update is currently installed;</li>
+<li>if the update system failed to start the app the last time it was opened, a short technical error message describing that failure, so a broken update can be detected.</li>
+</ul>
+<p>Like any internet server, the update server can see the IP address the connection comes from. The connection is encrypted.</p>
+<p>Update checks do not send your activity records, your location, your settings, or anything else you have entered. Without an internet connection nothing is sent, and the app keeps working normally from the version already installed on your device.</p>
+<h3>Location — only if you switch on movement detection</h3>
+<p>The app does not use location for anything unless you switch on <strong>Watch for movement during breaks</strong> in Settings. The feature is off when you install the app, and the app does not ask for the permission until you turn it on. Before Android asks, the app explains what the feature does.</p>
+<p>The feature needs two location permissions from Android:</p>
+<ul>
+<li><strong>precise and approximate location</strong> (fine and coarse location), because only a GPS reading is accurate enough to tell whether the vehicle is moving;</li>
+<li><strong>background location</strong> (&quot;Allow all the time&quot;), because the check has to keep working while the phone is locked, in your pocket, or the app is closed or not in use.</li>
+</ul>
+<p>When it is switched on:</p>
+<ul>
+<li>the app collects location data <strong>only while a break is running</strong>, to work out whether the vehicle has started moving. It stops as soon as the break ends, and as soon as you switch the feature off;</li>
+<li>it uses each reading to answer one question — are you moving faster than 5 mph — and then <strong>discards it</strong>. No coordinates and no route are ever stored on your phone, shown in the app, sent anywhere, or shared with anyone;</li>
+<li>while it is watching, Android shows a permanent notification, so it is always visible to you that the feature is running;</li>
+<li>when it detects movement, the app <strong>automatically ends your break and starts work</strong> from the moment you moved off — you are not asked first. The app then tells you the change was made. This is the only change the app ever makes to your records by itself. If it was wrong (for example you were a passenger), tap <strong>Break</strong> again to switch back.</li>
+</ul>
+<p>You can switch it off at any time in Settings, or withdraw the permission in Android settings. Everything else in the app works exactly the same without it.</p>
 <h3>Notifications</h3>
 <p>If you allow notifications, the app schedules reminders <strong>on your device</strong>. These reminders are generated locally from the records you entered. No push notification service is used, and no notification token or message content leaves your device.</p>
 <h3>Device settings the app reads</h3>
@@ -86,7 +112,7 @@
 <h3>Children</h3>
 <p>The app is intended for professional drivers. It is not directed at children and does not knowingly store information from children.</p>
 <h3>Your rights</h3>
-<p>Data protection law in the UK gives you rights over personal data that a company holds about you, including rights of access, correction and erasure. Those rights apply to data held by an organisation. Because we do not receive or hold any of your data, there is nothing for us to disclose, correct, or erase — the information is under your control on your device at all times.</p>
+<p>Data protection law in the UK gives you rights over personal data that a company holds about you, including rights of access, correction and erasure. Those rights apply to data held by an organisation. We do not receive or hold the records you enter, so there is nothing for us to disclose, correct, or erase — that information is under your control on your device at all times. The update check described under <strong>App updates</strong> is handled by Expo&#x27;s update service; if you have a question about it, contact us at the address below.</p>
 <h3>Changes to this policy</h3>
 <p>If the app changes in a way that affects this policy — for example if a paid subscription is introduced, which involves Google Play processing your payment — this policy will be updated before that change is released, and the &quot;Last updated&quot; date above will change.</p>
 <h3>Contact</h3>
